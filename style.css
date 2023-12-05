@@ -1,7 +1,179 @@
 * {
-    color: #000001;
+    color: #CAE7D6;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+    text-shadow: 0px, 0px, 0px, 0px;
+    text-align: justify;
+    
+    
+     border: solid 1px yellow;  
+    /* border: none; */
+    
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    
+    box-sizing: border-box; /* siempre va en todos los proyectos, evita que el padding haga que crezca la caja */ 
+    
 }
 
 body {
-    background-color: #D9B23D;
+    width: auto;
+    height: auto;
+    background:
+     linear-gradient(to bottom right,#07070D 0%, #0088C4 7.41%, #07070D 13.72%, #EC3535 25.23%, #80BCE7 10%, #EC3535 20%, #07070D 40%) bottom right,
+     linear-gradient(to bottom left, #07070D 0%, #0088C4 7.41%, #07070D 13.72%, #EC3535 25.23%, #80BCE7 10%, #EC3535 20%, #07070D 40%) bottom left,
+     linear-gradient(to top left,    #07070D 0%, #0088C4 7.41%, #07070D 13.72%, #EC3535 25.23%, #80BCE7 10%, #EC3535 20%, #07070D 40%) top left,
+     linear-gradient(to top right,   #07070D 0%, #0088C4 7.41%, #07070D 13.72%, #EC3535 25.23%, #80BCE7 10%, #EC3535 20%, #07070D 40%) top right;
+    background-size:50.01% 50.01%;
+    background-repeat:no-repeat;
+    backdrop-filter: blur(80%);
+    margin: 30px;
+    padding: 30px;
+}
+
+/* header */
+
+.header {
+    padding: 16px;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.header .nav .headerlist {
+    display: flex;
+    align-items: center;
+    gap: 16pt;
+    font-weight: bold;
+}
+
+
+.header .nav .contact {
+background: linear-gradient(#EC3535 65%, #D9B23D 100%);
+color: #CAE7D6;
+padding: 10px 20px;
+border-radius: 10px;
+border: solid 1px #CAE7D6;
+}
+
+
+/*primera seccion*/
+
+.main {
+    padding: 16px;
+    margin: 16px;
+    align-items: center;
+}
+
+.divsec1 {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+h1 {
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.button2 {
+background: linear-gradient(#EC3535 65%, #D9B23D 100%); 
+color: #EBF2F2;
+padding: 10px 16px;
+margin: 32px 0px 16px 40%;
+border-radius: 10px;
+flex-grow: 0;
+border: solid 1px currentColor
+}
+
+.img1 {
+    border-radius: 50px 20px 50px 20px;
+    margin: 10px
+}
+
+
+.divsec1-2 {
+    margin: 10px 10px 10px 10px;
+    padding: 32px;
+    flex: space-between;
+    align-content: center; 
+}
+
+/* segunda seccion */
+
+.divsec2 {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin: 10px 20px 10px 20px;
+}
+
+/* cuarta seccion */
+
+.Divsec4 {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 350px;
+    margin: 30px 20px 30px 50px;
+}
+
+.button3 {
+    background: linear-gradient(#EC3535 65%, #D9B23D 100%); 
+    color: #EBF2F2;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border: solid 1px currentColor;
+    text-align: center;
+    }
+
+    /* form & footer*/
+
+.weekly-up {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+}
+
+.footer {
+    background-image: url(Footersquare.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px 30px 0px 0px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.footervector {
+    display: flex;
+    align-items:first baseline;
+    flex-direction: column;
+    padding: 50px 50px 50px 50px;
+    margin: 20px 20px 20px 20px;
+}
+
+.footericons {
+    display: flex;
+    align-items: center;
+    margin: 80px;
+}
+
+.footerlist {
+    margin: 0px 180px 0 0;
 }
