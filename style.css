@@ -68,15 +68,15 @@ border: solid 1px #CAE7D6;
 /*primera seccion*/
 
 .main {
-    padding: 16px;
-    margin: 16px;
+    padding: 16px 0;
+    /* margin: 16px; */
     align-items: center;
 }
 
 .divsec1 {
     display: flex;
     align-items: center;
-    padding: 12px;
+    padding: 12px 0;
 }
 
 h1 {
@@ -104,7 +104,7 @@ border: solid 1px currentColor
 
 .divsec1-2 {
     margin: 10px 10px 10px 10px;
-    padding: 32px;
+    padding: 32px 0;
     flex: space-between;
     align-content: center; 
 }
@@ -114,19 +114,21 @@ border: solid 1px currentColor
 .divsec2 {
     display: flex;
     align-items: center;
-    padding: 12px;
-    margin: 10px 20px 10px 20px;
+    padding: 12px 0;
+    /* margin: 10px 20px 10px 20px; */
 }
 
 /* cuarta seccion */
 
 .Divsec4 {
-    width: auto;
-    height: auto;
+    /* width: auto;
+    height: auto; */
     display: flex;
     align-items: center;
-    gap: 350px;
-    margin: 30px 20px 30px 50px;
+    justify-content: space-between;
+    padding: 12px 0;
+    /* gap: 350px; */
+    /* margin: 30px 20px 30px 50px; */
 }
 
 .button3 {
