@@ -10,7 +10,7 @@
     text-align: justify;
     
     
-     border: solid 1px yellow;  
+     /* border: solid 1px yellow;   */
     /* border: none; */
     
     margin: 0;
@@ -139,6 +139,10 @@ border: solid 1px currentColor
     border-radius: 10px;
     border: solid 1px currentColor;
     text-align: center;
+    }
+
+    @keyframes myanimation {
+        
     }
 
     /* form & footer*/
