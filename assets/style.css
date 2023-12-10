@@ -2,20 +2,20 @@
     color: #CAE7D6;
     background-color: transparent;
     font-family: 'Roboto', sans-serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16pt;
-    font-weight: 400;
+    font-size: 18pt;
+    /* font-weight: 400; */
     list-style: none;
     text-decoration: none;
     text-shadow: 0px, 0px, 0px, 0px;
     text-align: justify;
     
     
-     /* border: solid 1px yellow;   */
+    /* border: solid 1px yellow;   */
     /* border: none; */
-    
+/*     
     margin: 0;
     padding: 0;
-    outline: 0;
+    outline: 0; */
     
     box-sizing: border-box; /* siempre va en todos los proyectos, evita que el padding haga que crezca la caja */ 
     
@@ -25,27 +25,24 @@ body {
     width: auto;
     height: auto;
     background:
-     linear-gradient(to bottom right,#07070D 0%, #0088C4 7.41%, #07070D 13.72%, #EC3535 25.23%, #80BCE7 10%, #EC3535 20%, #07070D 40%) bottom right,
-     linear-gradient(to bottom left, #07070D 0%, #0088C4 7.41%, #07070D 13.72%, #EC3535 25.23%, #80BCE7 10%, #EC3535 20%, #07070D 40%) bottom left,
-     linear-gradient(to top left,    #07070D 0%, #0088C4 7.41%, #07070D 13.72%, #EC3535 25.23%, #80BCE7 10%, #EC3535 20%, #07070D 40%) top left,
-     linear-gradient(to top right,   #07070D 0%, #0088C4 7.41%, #07070D 13.72%, #EC3535 25.23%, #80BCE7 10%, #EC3535 20%, #07070D 40%) top right;
+     linear-gradient(to bottom right,#07070D 0%, #EC3535 4.41%, #07070D 43.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom right,
+     linear-gradient(to bottom left, #07070D 0%, #EC3535 4.41%, #07070D 43.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom left,
+     linear-gradient(to top left,    #07070D 0%, #EC3535 4.41%, #07070D 43.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top left,
+     linear-gradient(to top right,   #07070D 0%, #EC3535 4.41%, #07070D 43.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top right;
     background-size:50.01% 50.01%;
     background-repeat:no-repeat;
-    backdrop-filter: blur(70%);
-    margin: 30px;
-    padding: 30px;
+    margin: 20px;
+    padding: 20px;
 }
 
 .background{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: -1000;
-    opacity: .2;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    z-index: -100;
     top: 0;
     left: 0;
 }
-
 
 /* header */
 
@@ -53,55 +50,67 @@ body {
     padding: 16px;
 }
 
-.img {
-    transition: all 0.2s ease-in;
+.Vectoricon {
+    transition: all 0.714s ease-in-out;
 }
 
-.img:hover {
-    transform: scale(2.2);
+.Vectoricon:hover {
+    transform: scale(2.8);
 }
 
 
 .header .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 264pt;
     margin: auto;
 }
 
 .header .nav .headerlist {
     display: flex;
     align-items: center;
-    gap: 16pt;
-    transition: all 0.1s ease-in-out;
+    gap: 45pt;
+    transition: step-end 2s ease-in-out;
 }
 
-.headerlist:hover {
-    transform: scale(1.1);
-}
-
-.header .nav .contact {
-background: linear-gradient(#EC3535 65%, #D9B23D 100%);
-color: #CAE7D6;
-padding: 10px 20px;
-border-radius: 10px;
-border: solid 1px #CAE7D6;
-transition: all 0.1s ease-in-out;
-}
-
-.contact:hover {
-    transform: scale(1.1);
-}
-
-.header .nav .contact:hover {
-    background: #D9B23D;
-}
-
-.a:visited {
-    color: #EC3535;
-}
+.headerlist a { /* Target link elements within the list */
+    transition: color 0.13s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+  .headerlist a:hover { /* Hover effect for links */
+    color: #D9B23D; /* Change text color on hover */
+    text-decoration: underline;
+    text-shadow: 0 0 4rem;
+  }
 
 button:hover {
 	background: #D9B23D;
+  }
+
+.header .nav .contact {
+/* background: linear-gradient(#EC3535 65%, #D9B23D 100%); */
+background: linear-gradient( to left, #D9B23D 5%, #EC3535 70%);
+color: #CAE7D6; 
+padding: 5px;
+border-radius: 10px;
+border: solid 2px #D9B23D;
+transition: all 0.13s ease-in-out;
+}
+
+.contact:hover {
+    animation: lineargradient1 0.3s ease-in-out infinite;
+    transform: scale(1.2);
+    box-shadow: 0 0 1rem;
+}
+
+
+@keyframes linearGradient1 {
+    0% {
+        background-position: -10px 0;
+    }
+    100% {
+        background-position: -200% 90%;
+    }
 }
 
 
@@ -109,7 +118,7 @@ button:hover {
 /*primera seccion*/
 
 .main {
-    padding: 16px 0;
+    padding: 20px;
     align-items: center;
 }
 
@@ -121,36 +130,45 @@ button:hover {
 
 h1 {
     display: flex;
-    font-size: 40px;
+    font-size: 70px;
     font-weight: bold;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
 }
 
 .button2 {
-background: linear-gradient(#EC3535 65%, #D9B23D 100%); 
+background: radial-gradient(#D9B23D 5%, #EC3535 70%); 
 color: #EBF2F2;
-padding: 10px 16px;
-margin: 32px 0px 16px 40%;
-border-radius: 10px;
-flex-grow: 0;
-transition: all 0.1s ease-in-out;
-border: solid 1px currentColor
+padding: 10px 20px;
+margin: 16px 0px 16px 40%;;
+border-radius: 15px;
+border: solid 1px #D9B23D;
+transition: all 0.05 ease-in-out;
 }
 
 .button2:hover {
-    transform: scale(1.1);
+    animation: radialGradient 0.6s ease-in-out infinite;
+    transform: scale(1.13);
+    box-shadow: 0 0 1rem;
 }
 
-.img1 {
+@keyframes radialGradient {
+    0% {
+      background-position: -5px 300;
+    }
+    100% {
+      background-position: -500% 100%;
+    }
+  }
+
+
+.Vrimg {
     border-radius: 50px 20px 50px 20px;
-    margin: 10px
 }
 
 
 .divsec1-2 {
-    margin: 10px 10px 10px 10px;
-    padding: 32px 0;
-    flex: space-between;
+    margin: 10px 30px 10px 20px;
+    justify-content: space-evenly;
     align-content: center; 
 }
 
@@ -167,7 +185,8 @@ border: solid 1px currentColor
 .Divsec4 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 9em;
     padding: 12px 0;
 }
 
@@ -186,9 +205,6 @@ border: solid 1px currentColor
         transform: scale(1.1);
     }
 
-    /* @keyframes myanimation {
-        
-    } */
 
     /* form & footer*/
 
@@ -203,11 +219,11 @@ border: solid 1px currentColor
     background-image: url(/assets/IMG/Footersquare.png);
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 30px;
     background-size: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap: 5px;
 }
@@ -216,8 +232,6 @@ border: solid 1px currentColor
     display: flex;
     align-items:first baseline;
     flex-direction: column;
-    padding: 100px 100px 100px 200px;
-    margin: 20px 20px 20px 20px;
     transition: all 0.1s ease-in-out;
     text-align: center;
     }
@@ -231,8 +245,6 @@ border: solid 1px currentColor
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 70px;
-    margin: 30px;
     transition: all 0.1s ease-in;
 }
 
@@ -249,3 +261,7 @@ border: solid 1px currentColor
 .footerlist:hover {
     transform: scale(1.2);
 }
+
+.footerlist a:hover { /* Hover effect for links */
+    color: #D9B23D;
+    }
