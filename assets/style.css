@@ -25,10 +25,10 @@ body {
     width: auto;
     height: auto;
     background:
-     linear-gradient(to bottom right,#07070D 0%, #D9B23D 4.1%, #07070D 13.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom right,
-     linear-gradient(to bottom left, #07070D 0%, #D9B23D 4.1%, #07070D 13.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom left,
-     linear-gradient(to top left,    #07070D 0%, #D9B23D 4.1%, #07070D 13.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top left,
-     linear-gradient(to top right,   #07070D 0%, #D9B23D 4.1%, #07070D 13.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top right;
+     linear-gradient(to bottom right,#07070D 0%, #D9B23D 4.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom right,
+     linear-gradient(to bottom left, #07070D 0%, #D9B23D 4.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom left,
+     linear-gradient(to top left,    #07070D 0%, #D9B23D 4.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top left,
+     linear-gradient(to top right,   #07070D 0%, #D9B23D 4.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top right;
     background-size:50.01% 50.01%;
     background-repeat:no-repeat;
     margin: 20px;
@@ -161,8 +161,15 @@ h1 {
     font-size: 90px;
     font-weight: bold;
     margin-bottom: 6px;
+    transition: all 0.3s ease-in-out;
+    color: #ec3535ab;
 }
 
+h1:hover {
+    transition: all 1.14s ease-in-out;
+    transform: scaley(-0.01%);
+   
+}
 
 .Vrimg {
     border-radius: 50px 20px 50px 20px;
@@ -206,14 +213,15 @@ h1 {
 
 .csimg:hover {
     transition: all 1.34s ease-in-out;
-    transform: scaleY(0.1);
-    transform: scaleX(0.66);
+    transform: scaleX(0.26);
 }
 
+
 .battleimg:hover {
-    transform: scaleX(-1);
-    transition: all 1.714s ease-in-out;
+    transition: all 0.74s ease-in;
+    transform: scaleY(-1);
 }
+
 
 .robotimg:hover {
     transition: all 1.14s ease-out;
