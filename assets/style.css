@@ -93,10 +93,11 @@ transition: all 0.714s ease-in-out
 }
 
 .contact:hover {
-    animation: lineargradient1 2.3s ease-in-out reverse infinite;
+    animation: linearGradient1 2.3s ease-in-out reverse infinite;
     transform: scale(1.25);
     box-shadow: 0 0 1rem;
     animation: gradient 0.05s ease-in reverse infinite;
+    color: #EC3535;
 }
 
 
@@ -110,12 +111,43 @@ transition: all 0.714s ease-in-out
 }
 
 
+.button2 {
+
+background: radial-gradient(#D9B23D 55%, #EC3535 95%); 
+color: #CAE7D6; 
+border-radius: 10px;
+padding: 15px 30px;
+margin: 16px 0px 16px 40%;;
+border: solid 1px #D9B23D;
+transition: all 0.17s ease-in-out
+
+}
+
+.button2:hover {
+    animation: linearGradient1 2.3s ease-in-out reverse infinite;
+    transform: scale(1.25);
+    box-shadow: 0 0 1rem;
+    animation: gradient 0.05s ease-in reverse infinite;
+    color: #EC3535;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: -750px 0;
+  }
+  360% {
+    background-position: 550% 0;
+  }
+}
 
 /*primera seccion*/
 
 .main {
     padding: 15px;
     align-items: center;
+    transition: all 1.2s ease-in-out;
+    transform: scaleY(0.05);
+    transform: scaleX(0.999);
 }
 
 .divsec1 {
@@ -131,35 +163,17 @@ h1 {
     margin-bottom: 6px;
 }
 
-.button2 {
-background: radial-gradient(#D9B23D 55%, #EC3535 95%); 
-color: #EBF2F2;
-padding: 15px 30px;
-margin: 16px 0px 16px 40%;;
-border-radius: 15px;
-border: solid 1px #EC3535;
-}
-
-.button2:hover {
-    transform: scale(0.8);
-    box-shadow: 0 0 1rem;
-    color: #EC3535;
-    animation: gradient 0.04s ease-in-out reverse infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: -720px 0;
-  }
-  360% {
-    background-position: 500% 0;
-  }
-}
 
 .Vrimg {
     border-radius: 50px 20px 50px 20px;
+    /* margin-left: 50px; */
+    transition: all 0.12s ease-out;  
 }
 
+.Vrimg:hover {
+    transform: scaleX(1.1);
+    animation: 0.03s ease-out;
+}
 
 .divsec1-2 {
     margin: 10px 30px 10px 20px;
@@ -190,6 +204,21 @@ border: solid 1px #EC3535;
     transform: scaleX(1.6);
 } 
 
+.csimg:hover {
+    transition: all 1.34s ease-in-out;
+    transform: scaleY(0.1);
+    transform: scaleX(0.66);
+}
+
+.battleimg:hover {
+    transform: scaleX(-1);
+    transition: all 1.714s ease-in-out;
+}
+
+.robotimg:hover {
+    transition: all 1.14s ease-out;
+    transform: scaleX(1.1) scaleY(1.1);
+}
 
 
 .button3 {
@@ -197,10 +226,23 @@ border: solid 1px #EC3535;
     color: #EBF2F2;
     padding: 10px 20px;
     border-radius: 15px;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.174s ease-in-out;
     border: solid 1px #EC3535;
     text-align: center;
     }
+
+   .button3:hover {animation: gradient 0.03s ease-out reverse infinite;
+    color: #EC3535;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: -750px 0;
+  }
+  360% {
+    background-position: 550% 0;
+  }
+}
 
     .button3:hover {
         transform: scale(1.1);
@@ -247,7 +289,8 @@ border: solid 1px #EC3535;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.1s ease-in;
+    transition: all 0.15s ease-in-out;
+    
 }
 
 .footericons:hover {
