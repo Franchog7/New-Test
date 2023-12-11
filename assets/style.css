@@ -25,10 +25,10 @@ body {
     width: auto;
     height: auto;
     background:
-     linear-gradient(to bottom right,#07070D 0%, #EC3535 4.41%, #07070D 43.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom right,
-     linear-gradient(to bottom left, #07070D 0%, #EC3535 4.41%, #07070D 43.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom left,
-     linear-gradient(to top left,    #07070D 0%, #EC3535 4.41%, #07070D 43.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top left,
-     linear-gradient(to top right,   #07070D 0%, #EC3535 4.41%, #07070D 43.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top right;
+     linear-gradient(to bottom right,#07070D 0%, #D9B23D 4.1%, #07070D 13.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom right,
+     linear-gradient(to bottom left, #07070D 0%, #D9B23D 4.1%, #07070D 13.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom left,
+     linear-gradient(to top left,    #07070D 0%, #D9B23D 4.1%, #07070D 13.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top left,
+     linear-gradient(to top right,   #07070D 0%, #D9B23D 4.1%, #07070D 13.72%, #D9B23D 195.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top right;
     background-size:50.01% 50.01%;
     background-repeat:no-repeat;
     margin: 20px;
@@ -55,7 +55,7 @@ body {
 }
 
 .Vectoricon:hover {
-    transform: scale(2.8);
+    transform: scale(6);
 }
 
 
@@ -70,37 +70,33 @@ body {
     display: flex;
     align-items: center;
     gap: 45pt;
-    transition: step-end 2s ease-in-out;
 }
 
 .headerlist a { /* Target link elements within the list */
     transition: color 0.13s ease-in-out; /* Smooth transition for hover effect */
+    transform: rotatey(20px);
   }
   
   .headerlist a:hover { /* Hover effect for links */
     color: #D9B23D; /* Change text color on hover */
     text-decoration: underline;
     text-shadow: 0 0 4rem;
-  }
+}
 
-button:hover {
-	background: #D9B23D;
-  }
-
-.header .nav .contact {
+.contact {
 /* background: linear-gradient(#EC3535 65%, #D9B23D 100%); */
-background: linear-gradient( to left, #D9B23D 5%, #EC3535 70%);
+background: radial-gradient(#D9B23D 55%, #EC3535 95%); 
 color: #CAE7D6; 
-padding: 5px;
 border-radius: 10px;
-border: solid 2px #D9B23D;
-transition: all 0.13s ease-in-out;
+border: solid 1px #D9B23D;
+transition: all 0.714s ease-in-out
 }
 
 .contact:hover {
-    animation: lineargradient1 0.3s ease-in-out infinite;
-    transform: scale(1.2);
+    animation: lineargradient1 2.3s ease-in-out reverse infinite;
+    transform: scale(1.25);
     box-shadow: 0 0 1rem;
+    animation: gradient 0.05s ease-in reverse infinite;
 }
 
 
@@ -118,7 +114,7 @@ transition: all 0.13s ease-in-out;
 /*primera seccion*/
 
 .main {
-    padding: 20px;
+    padding: 15px;
     align-items: center;
 }
 
@@ -130,36 +126,35 @@ transition: all 0.13s ease-in-out;
 
 h1 {
     display: flex;
-    font-size: 70px;
+    font-size: 90px;
     font-weight: bold;
     margin-bottom: 6px;
 }
 
 .button2 {
-background: radial-gradient(#D9B23D 5%, #EC3535 70%); 
+background: radial-gradient(#D9B23D 55%, #EC3535 95%); 
 color: #EBF2F2;
-padding: 10px 20px;
+padding: 15px 30px;
 margin: 16px 0px 16px 40%;;
 border-radius: 15px;
-border: solid 1px #D9B23D;
-transition: all 0.05 ease-in-out;
+border: solid 1px #EC3535;
 }
 
 .button2:hover {
-    animation: radialGradient 0.6s ease-in-out infinite;
-    transform: scale(1.13);
+    transform: scale(0.8);
     box-shadow: 0 0 1rem;
+    color: #EC3535;
+    animation: gradient 0.04s ease-in-out reverse infinite;
 }
 
-@keyframes radialGradient {
-    0% {
-      background-position: -5px 300;
-    }
-    100% {
-      background-position: -500% 100%;
-    }
+@keyframes gradient {
+  0% {
+    background-position: -720px 0;
   }
-
+  360% {
+    background-position: 500% 0;
+  }
+}
 
 .Vrimg {
     border-radius: 50px 20px 50px 20px;
@@ -186,23 +181,30 @@ transition: all 0.05 ease-in-out;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 9em;
-    padding: 12px 0;
+    gap: 7em;
 }
 
+.zombiezoom:hover {
+    transition: all 1.4s ease-in-out;
+    transform: scaleY(1.2);
+    transform: scaleX(1.6);
+} 
+
+
+
 .button3 {
-    background: linear-gradient(#EC3535 65%, #D9B23D 100%); 
+    background: radial-gradient(#D9B23D 55%, #EC3535 95%); 
     color: #EBF2F2;
     padding: 10px 20px;
-    margin: 10px 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     transition: all 0.1s ease-in-out;
-    border: solid 1px currentColor;
+    border: solid 1px #EC3535;
     text-align: center;
     }
 
     .button3:hover {
         transform: scale(1.1);
+        box-shadow: 0 0 1.13rem;
     }
 
 
