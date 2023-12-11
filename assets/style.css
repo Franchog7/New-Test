@@ -55,7 +55,7 @@ body {
 }
 
 .Vectoricon:hover {
-    transform: scale(6);
+    transform: scale(3);
 }
 
 
@@ -142,44 +142,39 @@ transition: all 0.17s ease-in-out
 
 /*primera seccion*/
 
-.main {
-    padding: 15px;
-    align-items: center;
-    transition: all 1.2s ease-in-out;
-    transform: scaleY(0.05);
-    transform: scaleX(0.999);
-}
-
 .divsec1 {
     display: flex;
     align-items: center;
     padding: 12px 0;
 }
 
-h1 {
+.h1 {
     display: flex;
-    font-size: 90px;
+    font-size: 3em;
     font-weight: bold;
-    margin-bottom: 6px;
-    transition: all 0.3s ease-in-out;
-    color: #ec3535ab;
+    margin: 1em 0;
+    transition: all 1.89s ease-in-out;
+    color: #ec3535cf;
+    background-color: #d9b23d00;
+    
 }
 
 h1:hover {
-    transition: all 1.14s ease-in-out;
-    transform: scaley(-0.01%);
-   
+    transition: 0.4s ease-in;
+    transform: scaleX(0.97) scaleX(0.97);
 }
 
 .Vrimg {
     border-radius: 50px 20px 50px 20px;
-    /* margin-left: 50px; */
-    transition: all 0.12s ease-out;  
+    margin-left: 150px;
+     
+    transition: 0.4s ease-in;
+    transform: scale(1.1);
 }
 
 .Vrimg:hover {
     transform: scaleX(1.1);
-    animation: 0.03s ease-out;
+    animation: 0.003s ease-out;
 }
 
 .divsec1-2 {
@@ -265,6 +260,10 @@ h1:hover {
     flex-direction: column;
     padding: 10px 10px 10px 10px;
     margin: 10px;
+}
+
+.form2 {
+    font-style: oblique;
 }
 
 .footer {
