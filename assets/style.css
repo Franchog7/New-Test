@@ -24,11 +24,6 @@
 body {
     width: auto;
     height: auto;
-    background:
-     linear-gradient(to bottom right,#07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom right,
-     linear-gradient(to bottom left, #07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom left,
-     linear-gradient(to top left,    #07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top left,
-     linear-gradient(to top right,   #07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top right;
     background-size:50.01% 50.01%;
     background-repeat:no-repeat;
     background-position: fixed;
@@ -37,8 +32,13 @@ body {
 }
 
 .background{
-    width: 100%;
-    height: 100%;
+    background:
+     linear-gradient(to bottom right,#07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom right,
+     linear-gradient(to bottom left, #07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom left,
+     linear-gradient(to top left,    #07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top left,
+     linear-gradient(to top right,   #07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top right;
+    width: 100vw;
+    height: 100vh;
     position:fixed;
     z-index: -100;
     top: 0;
@@ -63,7 +63,11 @@ body {
 .header .nav {
     display: flex;
     justify-content: space-evenly;
-    gap: 264pt;
+
+    /* Evita los gap para separa elementos si puedes usar space-beetwen */
+    /* gap: 264pt; */
+    justify-content: space-between;
+
     margin: auto;
 }
 
@@ -115,7 +119,7 @@ transition: all 0.714s ease-in-out
 .button2 {
 
 background: radial-gradient(#D9B23D 55%, #EC3535 95%); 
-color: #CAE7D6; 
+/* color: #CAE7D6;  */
 border-radius: 10px;
 padding: 15px 30px;
 margin: 16px 0px 16px 40%;;

@@ -26,9 +26,14 @@
                 <li><a href="https://www.gamestorrents.fm/juegos-pc/">DOWNLOADS</a></li>
             </ul>
 
-            <Button class="contact"><a href="https://soundcloud.com/frackbagofficial">
-                CONTACT US
-            </a></Button>          
+            <!-- Cuidado con las etiquetas con nombres mayusculas, las etiquetas no llevan mayusculas
+                 otro detalle es que los <a> deben cubrir el componente en lugar de ir dentro de ellos
+            -->
+            <button class="contact">
+                <a href="https://soundcloud.com/frackbagofficial">
+                    CONTACT US
+                </a>
+            </button>          
         </nav>
     </header>
 
@@ -91,7 +96,7 @@
         </section>
     </main>
 
-    <Footer>
+    <footer>
         <nav class="footer">
             <div class="footervector">
             <img src="/assets/Icons/Vector2.svg" alt="Gaming control">
@@ -114,7 +119,7 @@
             </div> 
 
         </nav>
-    </Footer>
+    </footer>
 
         <Script src="/assets/js/script.js"></Script>
 </body>
