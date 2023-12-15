@@ -24,6 +24,11 @@
 body {
     width: auto;
     height: auto;
+    background:
+     linear-gradient(to bottom right,#07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom right,
+     linear-gradient(to bottom left, #07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom left,
+     linear-gradient(to top left,    #07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top left,
+     linear-gradient(to top right,   #07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top right;
     background-size:50.01% 50.01%;
     background-repeat:no-repeat;
     background-position: fixed;
@@ -32,11 +37,6 @@ body {
 }
 
 .background{
-    background:
-     linear-gradient(to bottom right,#07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom right,
-     linear-gradient(to bottom left, #07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) bottom left,
-     linear-gradient(to top left,    #07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top left,
-     linear-gradient(to top right,   #07070D 0%, #D9B23D 6.1%, #07070D 13.72%, #EC3535 295.23%, #80BCE7 10%, #EC3535 20%, #07070D 60%) top right;
     width: 100vw;
     height: 100vh;
     position:fixed;
@@ -62,7 +62,7 @@ body {
 
 .header .nav {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 
     /* Evita los gap para separa elementos si puedes usar space-beetwen */
     /* gap: 264pt; */
